@@ -1,0 +1,22 @@
+{
+  "name": "NormalTools",
+  "version": "0.1.0",
+  "summary": "A short description of NormalTools.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Fengzee/NormalTools",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Fengzee": "576830561@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/Fengzee/NormalTools.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "NormalTools/Classes/**/*"
+}

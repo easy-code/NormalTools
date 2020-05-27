@@ -1,0 +1,6 @@
+framework module NormalTools {
+  umbrella header "NormalTools-umbrella.h"
+
+  export *
+  module * { export * }
+}
