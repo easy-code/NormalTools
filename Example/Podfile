@@ -7,7 +7,7 @@ target 'NormalTools_Example' do
 
   target 'NormalTools_Tests' do
     inherit! :search_paths
-
+    pod 'YYCategories', '~> 1.0.4'
     pod 'FBSnapshotTestCase'
   end
 end
