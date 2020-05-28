@@ -1,9 +1,9 @@
 # NormalTools
 
-[![CI Status](https://img.shields.io/travis/Fengzee/NormalTools.svg?style=flat)](https://travis-ci.org/Fengzee/NormalTools)
-[![Version](https://img.shields.io/cocoapods/v/NormalTools.svg?style=flat)](https://cocoapods.org/pods/NormalTools)
-[![License](https://img.shields.io/cocoapods/l/NormalTools.svg?style=flat)](https://cocoapods.org/pods/NormalTools)
-[![Platform](https://img.shields.io/cocoapods/p/NormalTools.svg?style=flat)](https://cocoapods.org/pods/NormalTools)
+[![CI Status](https://img.shields.io/travis/Fengzee/NormalTools.svg?style=flat)](https://github.com/Fengzee/NormalTools)
+[![Version](https://img.shields.io/cocoapods/v/NormalTools.svg?style=flat)](https://github.com/Fengzee/NormalTools)
+[![License](https://img.shields.io/cocoapods/l/NormalTools.svg?style=flat)](https://github.com/Fengzee/NormalTools)
+[![Platform](https://img.shields.io/cocoapods/p/NormalTools.svg?style=flat)](https://github.com/Fengzee/NormalTools)
 
 ## Example
 
