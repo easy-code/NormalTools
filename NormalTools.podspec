@@ -36,7 +36,7 @@ TODO: Add long description of the pod here.
   #   'NormalTools' => ['NormalTools/Assets/*.png']
   # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
+  s.public_header_files = 'Pod/Classes/Toast+UIView.h'
   s.frameworks = 'UIKit'
   s.dependency 'YYCategories', '~> 1.0.4'
 end
