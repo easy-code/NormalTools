@@ -1,9 +1,9 @@
 //
-//  Toast+UIView.m
-//  Toast
-//  Version 2.0
+//  Toast+UIView.h
+//  NormalTools
 //
-//  Copyright 2013 Charles Scalesse.
+//  Created by Fengzee on 05/27/2020.
+//  Copyright (c) 2020 Fengzee. All rights reserved.
 //
 
 #import "Toast+UIView.h"
