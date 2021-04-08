@@ -19,7 +19,7 @@ or alternatively using `brew install fastlane`
 ```
 fastlane release_pod
 ```
-
+Release new pod version
 
 ----
 

@@ -1,38 +1,50 @@
+desc 'Release new pod version'
 lane :release_pod do |options|
- 
-  tagNum = options[:'1.0.1']
-  podspecName = options[:specName]
- 
-  # 航道上需要执行的操作
-  # 具体action到 https://docs.fastlane.tools/actions 上面查找
-  # 这里的路径以仓库根目录为准
- 
-  # 1、修改spec文件（修改s.version，s.description等）
-  # 2、pod install （使Example与pod下来的库产生关联）
-  cocoapods(
-    clean: true,
-    podfile: "./Example/Podfile"
-  )
- 
- 
-  # 3、提交本地仓库代码至远程仓库
-  git_add(path: ".")
-  git_commit(path: ".", message: "upgrade repo")
+  target_repo    = options[:repo]
+  target_project = options[:project]
+  target_version = options[:version]
+  target_desc    = options[:desc]
+  spec_path      = "#{target_project}.podspec"
+
+  if target_project.nil? || target_project.empty? || target_version.nil? || target_version.empty?
+    UI.message("❌ Project name and version number are required parameters")
+    exit
+  end
+
+  UI.message("👉 Start release lib #{target_project} new version #{target_version}")
+
+  git_pull
+  ensure_git_branch
+  version_bump_podspec(path: spec_path, version_number: target_version)
+  git_add(path: '.')
+  begin
+    if target_desc.nil? || target_desc.empty?
+      git_commit(path: '.', message: "release #{target_version}")
+    else
+      git_commit(path: '.', message: target_desc)
+    end
+  rescue
+    error_message = "#{$!}"
+    UI.message("⚠️ commit error:#{error_message}")
+    unless error_message.include?("nothing to commit, working directory clean")
+      exit
+    end
+    UI.message("The local code has committed, skip the commit step!")
+  end
   push_to_git_remote
- 
- 
-  # 4、打标签，并提交至远程
-  add_git_tag(
-    tag: tagNum
-  )
+  if git_tag_exists(tag: target_version)
+      UI.message("Tag #{target_version} already exists, then, delete it! 💥")
+      remove_git_tag(tag: target_version)
+  end
+  add_git_tag(tag: target_version)
   push_git_tags
- 
- 
-  # 5、验证spec，并提至私有索引库
   pod_lib_lint(allow_warnings: true)
-  # 因为本地索引库repo的名字是基本上不会去改变的，所以这里直接写死 LXFSpecs
-  # podspec的名字需要由外界传入
-  pod_push(path: "#{podspecName}.podspec", repo: "repo")
- 
- 
+  if target_repo
+    pod_push(path: spec_path, repo: target_repo, allow_warnings: true)
+    UI.message("Release lib #{target_project} new version #{target_version} to repo #{target_repo} Successfully! 🎉 ")
+  else
+    pod_push(path: spec_path, allow_warnings: true)
+    UI.message("Release lib #{target_project} new version #{target_version} to CocoaPods/Specs Successfully! 🎉 ")
+  end
 end
+
