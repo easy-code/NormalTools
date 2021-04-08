@@ -1,6 +1,6 @@
 lane :release_pod do |options|
  
-  tagNum = options[:"1.0.1"]
+  tagNum = options[:'1.0.1']
   podspecName = options[:specName]
  
   # 航道上需要执行的操作
