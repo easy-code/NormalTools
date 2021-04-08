@@ -4,7 +4,8 @@ PODS:
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
-  - NormalTools (0.0.1)
+  - NormalTools (1.0.0):
+    - YYCategories (~> 1.0.4)
   - YYCategories (1.0.4):
     - YYCategories/no-arc (= 1.0.4)
   - YYCategories/no-arc (1.0.4)
@@ -25,9 +26,9 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  NormalTools: f385e5fb94aa40c09f2c95f4acd0a35e9c65fd16
+  NormalTools: eaba309c6cbde428102b03595cb6fac374626244
   YYCategories: 6bcd4314c6661a561410dce4a793379ebd306abd
 
 PODFILE CHECKSUM: 626a025ba6264aefa8453886360688d482f3d4ea
 
-COCOAPODS: 1.9.2
+COCOAPODS: 1.10.1

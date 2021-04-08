@@ -10,7 +10,10 @@
 #endif
 #endif
 
+#import "NormalToos.h"
 #import "Toast+UIView.h"
+#import "UIColor+AddColor.h"
+#import "UIView+WhenTappedBlocks.h"
 
 FOUNDATION_EXPORT double NormalToolsVersionNumber;
 FOUNDATION_EXPORT const unsigned char NormalToolsVersionString[];
