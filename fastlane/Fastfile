@@ -1,3 +1,4 @@
+#用法 fastlane release_pod project:"NormalTools" version:"1.0.2"
 desc 'Release New Pod Version'
 lane :release_pod do |options|
   target_repo    = options[:repo]
@@ -42,7 +43,6 @@ lane :release_pod do |options|
 
   add_git_tag(tag: target_version)
   push_git_tags
-
   pod_lib_lint(allow_warnings: true)
   if target_repo
     pod_push(path: spec_path, repo: target_repo, allow_warnings: true)
