@@ -17,7 +17,7 @@ pod 'NormalTools'
 
 ## Author
 
-Fengzee, 576830561@qq.com
+ChengFeng, 576830561@qq.com
 
 ## License
 
