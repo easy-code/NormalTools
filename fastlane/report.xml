@@ -5,9 +5,62 @@
     
     
       
-      <testcase classname="fastlane.lanes" name="0: git_pull" time="1.648909">
+      <testcase classname="fastlane.lanes" name="00: git_pull" time="2.195569">
         
-          <failure message="/Users/chengfeng/.rvm/gems/ruby-2.6.3/gems/fastlane-2.180.1/fastlane/lib/fastlane/actions/actions_helper.rb:67:in `execute_action'&#10;/Users/chengfeng/.rvm/gems/ruby-2.6.3/gems/fastlane-2.180.1/fastlane/lib/fastlane/runner.rb:255:in `block in execute_action'&#10;/Users/chengfeng/.rvm/gems/ruby-2.6.3/gems/fastlane-2.180.1/fastlane/lib/fastlane/runner.rb:229:in `chdir'&#10;/Users/chengfeng/.rvm/gems/ruby-2.6.3/gems/fastlane-2.180.1/fastlane/lib/fastlane/runner.rb:229:in `execute_action'&#10;/Users/chengfeng/.rvm/gems/ruby-2.6.3/gems/fastlane-2.180.1/fastlane/lib/fastlane/runner.rb:157:in `trigger_action_by_name'&#10;/Users/chengfeng/.rvm/gems/ruby-2.6.3/gems/fastlane-2.180.1/fastlane/lib/fastlane/fast_file.rb:159:in `method_missing'&#10;Fastfile:17:in `block in parsing_binding'&#10;/Users/chengfeng/.rvm/gems/ruby-2.6.3/gems/fastlane-2.180.1/fastlane/lib/fastlane/lane.rb:33:in `call'&#10;/Users/chengfeng/.rvm/gems/ruby-2.6.3/gems/fastlane-2.180.1/fastlane/lib/fastlane/runner.rb:49:in `block in execute'&#10;/Users/chengfeng/.rvm/gems/ruby-2.6.3/gems/fastlane-2.180.1/fastlane/lib/fastlane/runner.rb:45:in `chdir'&#10;/Users/chengfeng/.rvm/gems/ruby-2.6.3/gems/fastlane-2.180.1/fastlane/lib/fastlane/runner.rb:45:in `execute'&#10;/Users/chengfeng/.rvm/gems/ruby-2.6.3/gems/fastlane-2.180.1/fastlane/lib/fastlane/lane_manager.rb:47:in `cruise_lane'&#10;/Users/chengfeng/.rvm/gems/ruby-2.6.3/gems/fastlane-2.180.1/fastlane/lib/fastlane/command_line_handler.rb:36:in `handle'&#10;/Users/chengfeng/.rvm/gems/ruby-2.6.3/gems/fastlane-2.180.1/fastlane/lib/fastlane/commands_generator.rb:108:in `block (2 levels) in run'&#10;/Users/chengfeng/.rvm/rubies/ruby-2.6.3/lib/ruby/gems/2.6.0/gems/commander-fastlane-4.4.6/lib/commander/command.rb:178:in `call'&#10;/Users/chengfeng/.rvm/rubies/ruby-2.6.3/lib/ruby/gems/2.6.0/gems/commander-fastlane-4.4.6/lib/commander/command.rb:153:in `run'&#10;/Users/chengfeng/.rvm/rubies/ruby-2.6.3/lib/ruby/gems/2.6.0/gems/commander-fastlane-4.4.6/lib/commander/runner.rb:476:in `run_active_command'&#10;/Users/chengfeng/.rvm/gems/ruby-2.6.3/gems/fastlane-2.180.1/fastlane_core/lib/fastlane_core/ui/fastlane_runner.rb:76:in `run!'&#10;/Users/chengfeng/.rvm/rubies/ruby-2.6.3/lib/ruby/gems/2.6.0/gems/commander-fastlane-4.4.6/lib/commander/delegates.rb:15:in `run!'&#10;/Users/chengfeng/.rvm/gems/ruby-2.6.3/gems/fastlane-2.180.1/fastlane/lib/fastlane/commands_generator.rb:352:in `run'&#10;/Users/chengfeng/.rvm/gems/ruby-2.6.3/gems/fastlane-2.180.1/fastlane/lib/fastlane/commands_generator.rb:41:in `start'&#10;/Users/chengfeng/.rvm/gems/ruby-2.6.3/gems/fastlane-2.180.1/fastlane/lib/fastlane/cli_tools_distributor.rb:122:in `take_off'&#10;/Users/chengfeng/.rvm/gems/ruby-2.6.3/gems/fastlane-2.180.1/bin/fastlane:23:in `&lt;top (required)&gt;'&#10;/Users/chengfeng/.rvm/gems/ruby-2.6.3/bin/fastlane:23:in `load'&#10;/Users/chengfeng/.rvm/gems/ruby-2.6.3/bin/fastlane:23:in `&lt;main&gt;'&#10;/Users/chengfeng/.rvm/gems/ruby-2.6.3/bin/ruby_executable_hooks:24:in `eval'&#10;/Users/chengfeng/.rvm/gems/ruby-2.6.3/bin/ruby_executable_hooks:24:in `&lt;main&gt;'&#10;&#10;Exit status of command 'git pull &amp;&amp; git fetch --tags' was 1 instead of 0.&#10;Already up to date.&#10;From https://github.com/Fengzee/NormalTools&#10; ! [rejected]        1.0.3      -&gt; 1.0.3  (would clobber existing tag)&#10;" />
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="01: ensure_git_branch" time="0.017797">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="02: version_bump_podspec" time="0.001448">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="03: git_add" time="0.048735">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="04: git_commit" time="0.065375">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="05: push_to_git_remote" time="3.044668">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="06: git_tag_exists" time="0.014972">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="07: remove_tag" time="3.204363">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="08: add_git_tag" time="0.022046">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="09: push_git_tags" time="2.925258">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="10: pod_lib_lint" time="91.448117">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="11: pod_push" time="97.371395">
         
       </testcase>
     
