@@ -1,6 +1,6 @@
 {
   "name": "NormalTools",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "summary": "常用工具合集",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/Fengzee/NormalTools.git",
@@ -13,14 +13,17 @@
   },
   "source": {
     "git": "https://github.com/Fengzee/NormalTools.git",
-    "tag": "1.0.2"
+    "tag": "1.0.3"
   },
   "platforms": {
     "ios": "9.0"
   },
   "source_files": "NormalTools/Classes/**/*",
   "public_header_files": "Pod/Classes/NormalTools.h",
-  "frameworks": "UIKit",
+  "frameworks": [
+    "UIKit",
+    "CoreImage"
+  ],
   "dependencies": {
     "YYCategories": [
       "~> 1.0.4"
