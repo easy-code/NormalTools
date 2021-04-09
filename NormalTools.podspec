@@ -36,7 +36,7 @@ TODO: Add long description of the pod here.
   #   'NormalTools' => ['NormalTools/Assets/*.png']
   # }
 
-  s.public_header_files = 'Pod/Classes/NormalTools.h'
+  s.public_header_files = 'Pods/Classes/NormalTools.h'
   s.frameworks = 'UIKit','CoreImage'
   s.dependency 'YYCategories', '~> 1.0.4'
 end
