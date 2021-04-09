@@ -2,8 +2,8 @@
 //  NTAppDelegate.h
 //  NormalTools
 //
-//  Created by Fengzee on 05/27/2020.
-//  Copyright (c) 2020 Fengzee. All rights reserved.
+//  Created by chengfeng on 05/27/2020.
+//  Copyright (c) 2020 chengfeng. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

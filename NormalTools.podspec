@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'NormalTools'
-  s.version          = '1.0.1'
+  s.version          = '1.0.2'
   s.summary          = '常用工具合集'
 
 # This description is used to generate tags and improve search results.
@@ -37,6 +37,6 @@ TODO: Add long description of the pod here.
   # }
 
   s.public_header_files = 'Pod/Classes/NormalTools.h'
-  s.frameworks = 'UIKit'
+  s.frameworks = 'UIKit','CoreImage'
   s.dependency 'YYCategories', '~> 1.0.4'
 end

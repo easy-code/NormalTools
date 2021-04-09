@@ -10,10 +10,16 @@
 #endif
 #endif
 
-#import "NormalToos.h"
-#import "Toast+UIView.h"
 #import "UIColor+AddColor.h"
+#import "NSDate+XCAddition.h"
+#import "IPCapture.h"
+#import "route.h"
+#import "UILabel+LineCounter.h"
+#import "NormalToos.h"
+#import "QRCode.h"
+#import "SavePhoto.h"
 #import "UIView+WhenTappedBlocks.h"
+#import "Toast+UIView.h"
 
 FOUNDATION_EXPORT double NormalToolsVersionNumber;
 FOUNDATION_EXPORT const unsigned char NormalToolsVersionString[];

@@ -1,4 +1,4 @@
-desc 'Release new pod version'
+desc 'Release New Pod Version'
 lane :release_pod do |options|
   target_repo    = options[:repo]
   target_project = options[:project]
@@ -17,12 +17,14 @@ lane :release_pod do |options|
   ensure_git_branch
   version_bump_podspec(path: spec_path, version_number: target_version)
   git_add(path: '.')
+
   begin
     if target_desc.nil? || target_desc.empty?
       git_commit(path: '.', message: "release #{target_version}")
     else
       git_commit(path: '.', message: target_desc)
-    end
+  end
+
   rescue
     error_message = "#{$!}"
     UI.message("⚠️ commit error:#{error_message}")
@@ -31,13 +33,16 @@ lane :release_pod do |options|
     end
     UI.message("The local code has committed, skip the commit step!")
   end
+
   push_to_git_remote
   if git_tag_exists(tag: target_version)
       UI.message("Tag #{target_version} already exists, then, delete it! 💥")
       remove_git_tag(tag: target_version)
   end
+
   add_git_tag(tag: target_version)
   push_git_tags
+
   pod_lib_lint(allow_warnings: true)
   if target_repo
     pod_push(path: spec_path, repo: target_repo, allow_warnings: true)

@@ -1,10 +1,9 @@
 //
 //  UIView+WhenTappedBlocks.h
-//  BD
+//  cheng
 //
-//  Created by Fengzee on 05/27/2020.
-//  Copyright (c) 2020 Fengzee. All rights reserved.
-//
+//  Created by chengfeng on 04/09/2021.
+//  Copyright (c) 2021 chengfeng. All rights reserved.
 
 #if NS_BLOCKS_AVAILABLE
 
