@@ -6,6 +6,7 @@
 //  Copyright (c) 2021 chengfeng. All rights reserved.
 
 #import "QRCode.h"
+#define ar ([[UIScreen mainScreen] bounds].size.width/375.0)
 
 @implementation QRCode
 
@@ -30,7 +31,7 @@
     
     //拿到二维码图片，此时的图片不是很清晰，需要二次加工
     CIImage *outPutImage = [filter outputImage];
-    UIImage *image = [QRCode getHDImgWithCIImage:outPutImage size:CGSizeMake(120*adjustRatio, 120*adjustRatio)];
+    UIImage *image = [QRCode getHDImgWithCIImage:outPutImage size:CGSizeMake(120*ar, 120*ar)];
     return image;
 }
 
