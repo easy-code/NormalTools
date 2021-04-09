@@ -5,54 +5,37 @@
     
     
       
-      <testcase classname="fastlane.lanes" name="0: git_pull" time="1.458841">
+      <testcase classname="fastlane.lanes" name="0: git_pull" time="1.468938">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="1: ensure_git_branch" time="0.012516">
+      <testcase classname="fastlane.lanes" name="1: ensure_git_branch" time="0.01302">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="2: version_bump_podspec" time="0.001116">
+      <testcase classname="fastlane.lanes" name="2: version_bump_podspec" time="0.001173">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="3: git_add" time="0.020053">
+      <testcase classname="fastlane.lanes" name="3: git_add" time="0.018121">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="4: git_commit" time="0.039934">
+      <testcase classname="fastlane.lanes" name="4: git_commit" time="0.040582">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="5: push_to_git_remote" time="2.725052">
+      <testcase classname="fastlane.lanes" name="5: push_to_git_remote" time="2.795743">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="6: git_tag_exists" time="0.015482">
-        
-      </testcase>
-    
-      
-      <testcase classname="fastlane.lanes" name="7: add_git_tag" time="0.028856">
-        
-      </testcase>
-    
-      
-      <testcase classname="fastlane.lanes" name="8: push_git_tags" time="2.726617">
-        
-      </testcase>
-    
-      
-      <testcase classname="fastlane.lanes" name="9: pod_lib_lint" time="170.05463">
-        
-          <failure message="/Users/mac/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/fastlane-2.180.0/fastlane/lib/fastlane/actions/actions_helper.rb:67:in `execute_action'&#10;/Users/mac/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/fastlane-2.180.0/fastlane/lib/fastlane/runner.rb:255:in `block in execute_action'&#10;/Users/mac/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/fastlane-2.180.0/fastlane/lib/fastlane/runner.rb:229:in `chdir'&#10;/Users/mac/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/fastlane-2.180.0/fastlane/lib/fastlane/runner.rb:229:in `execute_action'&#10;/Users/mac/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/fastlane-2.180.0/fastlane/lib/fastlane/runner.rb:157:in `trigger_action_by_name'&#10;/Users/mac/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/fastlane-2.180.0/fastlane/lib/fastlane/fast_file.rb:159:in `method_missing'&#10;Fastfile:46:in `block in parsing_binding'&#10;/Users/mac/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/fastlane-2.180.0/fastlane/lib/fastlane/lane.rb:33:in `call'&#10;/Users/mac/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/fastlane-2.180.0/fastlane/lib/fastlane/runner.rb:49:in `block in execute'&#10;/Users/mac/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/fastlane-2.180.0/fastlane/lib/fastlane/runner.rb:45:in `chdir'&#10;/Users/mac/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/fastlane-2.180.0/fastlane/lib/fastlane/runner.rb:45:in `execute'&#10;/Users/mac/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/fastlane-2.180.0/fastlane/lib/fastlane/lane_manager.rb:47:in `cruise_lane'&#10;/Users/mac/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/fastlane-2.180.0/fastlane/lib/fastlane/command_line_handler.rb:36:in `handle'&#10;/Users/mac/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/fastlane-2.180.0/fastlane/lib/fastlane/commands_generator.rb:108:in `block (2 levels) in run'&#10;/Users/mac/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/commander-fastlane-4.4.6/lib/commander/command.rb:178:in `call'&#10;/Users/mac/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/commander-fastlane-4.4.6/lib/commander/command.rb:153:in `run'&#10;/Users/mac/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/commander-fastlane-4.4.6/lib/commander/runner.rb:476:in `run_active_command'&#10;/Users/mac/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/fastlane-2.180.0/fastlane_core/lib/fastlane_core/ui/fastlane_runner.rb:76:in `run!'&#10;/Users/mac/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/commander-fastlane-4.4.6/lib/commander/delegates.rb:15:in `run!'&#10;/Users/mac/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/fastlane-2.180.0/fastlane/lib/fastlane/commands_generator.rb:352:in `run'&#10;/Users/mac/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/fastlane-2.180.0/fastlane/lib/fastlane/commands_generator.rb:41:in `start'&#10;/Users/mac/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/fastlane-2.180.0/fastlane/lib/fastlane/cli_tools_distributor.rb:122:in `take_off'&#10;/Users/mac/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/fastlane-2.180.0/bin/fastlane:23:in `&lt;top (required)&gt;'&#10;/Users/mac/.rbenv/versions/2.7.1/bin/fastlane:23:in `load'&#10;/Users/mac/.rbenv/versions/2.7.1/bin/fastlane:23:in `&lt;top (required)&gt;'&#10;/Users/mac/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/bundler-2.1.4/lib/bundler/cli/exec.rb:63:in `load'&#10;/Users/mac/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/bundler-2.1.4/lib/bundler/cli/exec.rb:63:in `kernel_load'&#10;/Users/mac/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/bundler-2.1.4/lib/bundler/cli/exec.rb:28:in `run'&#10;/Users/mac/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/bundler-2.1.4/lib/bundler/cli.rb:476:in `exec'&#10;/Users/mac/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/bundler-2.1.4/lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'&#10;/Users/mac/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/bundler-2.1.4/lib/bundler/vendor/thor/lib/thor/invocation.rb:127:in `invoke_command'&#10;/Users/mac/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/bundler-2.1.4/lib/bundler/vendor/thor/lib/thor.rb:399:in `dispatch'&#10;/Users/mac/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/bundler-2.1.4/lib/bundler/cli.rb:30:in `dispatch'&#10;/Users/mac/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/bundler-2.1.4/lib/bundler/vendor/thor/lib/thor/base.rb:476:in `start'&#10;/Users/mac/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/bundler-2.1.4/lib/bundler/cli.rb:24:in `start'&#10;/Users/mac/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/bundler-2.1.4/exe/bundle:46:in `block in &lt;top (required)&gt;'&#10;/Users/mac/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/bundler-2.1.4/lib/bundler/friendly_errors.rb:123:in `with_friendly_errors'&#10;/Users/mac/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/bundler-2.1.4/exe/bundle:34:in `&lt;top (required)&gt;'&#10;/Users/mac/.rbenv/versions/2.7.1/bin/bundle:23:in `load'&#10;/Users/mac/.rbenv/versions/2.7.1/bin/bundle:23:in `&lt;main&gt;'&#10;&#10;Exit status of command 'bundle exec pod lib lint --allow-warnings' was 1 instead of 0.&#10;&#10; -&gt; NormalTools -&gt; NormalTools (1.0.3)&#10;    - WARN  | url: There was a problem validating the URL https://github.com/Fengzee/NormalTools.git.&#10;    - WARN  | [iOS] file patterns: The `public_header_files` pattern did not match any file.&#10;    - ERROR | [iOS] xcodebuild: Returned an unsuccessful exit code. You can use `--verbose` for more information.&#10;    - NOTE  | xcodebuild:  note: Using new build system&#10;    - NOTE  | xcodebuild:  note: Building targets in parallel&#10;    - NOTE  | xcodebuild:  note: Using codesigning identity override: -&#10;    - NOTE  | [iOS] xcodebuild:  note: Planning build&#10;    - NOTE  | [iOS] xcodebuild:  note: Constructing build description&#10;    - NOTE  | [iOS] xcodebuild:  warning: Skipping code signing because the target does not have an Info.plist file and one is not being generated automatically. (in target 'App' from project 'App')&#10;    - WARN  | [iOS] xcodebuild:  YYCategories/YYCategories/Foundation/NSString+YYAdd.h:120:9: warning: parameter 'base64Encoding' not found in the function declaration [-Wdocumentation]&#10;    - NOTE  | [iOS] xcodebuild:  YYCategories/YYCategories/Foundation/NSString+YYAdd.h:120:9: note: did you mean 'base64EncodedString'?&#10;    - WARN  | [iOS] xcodebuild:  YYCategories/YYCategories/Foundation/NSString+YYAdd.h:138:15: warning: HTML start tag prematurely ended, expected attribute name or '&gt;' [-Wdocumentation]&#10;    - WARN  | [iOS] xcodebuild:  YYCategories/YYCategories/Foundation/NSString+YYAdd.h:138:14: warning: HTML tag 'b' requires an end tag [-Wdocumentation-html]&#10;    - WARN  | [iOS] xcodebuild:  YYCategories/YYCategories/Quartz/YYCGUtilities.h:29:22: warning: this function declaration is not a prototype [-Wstrict-prototypes]&#10;    - WARN  | [iOS] xcodebuild:  YYCategories/YYCategories/Quartz/YYCGUtilities.h:32:20: warning: this function declaration is not a prototype [-Wstrict-prototypes]&#10;    - WARN  | [iOS] xcodebuild:  YYCategories/YYCategories/Quartz/YYCGUtilities.h:83:66: warning: array parameter is missing a nullability type specifier (_Nonnull, _Nullable, or _Null_unspecified) [-Wnullability-completeness-on-arrays]&#10;    - NOTE  | [iOS] xcodebuild:  YYCategories/YYCategories/Quartz/YYCGUtilities.h:83:66: note: insert '_Nullable' if the array parameter may be null&#10;    - NOTE  | [iOS] xcodebuild:  YYCategories/YYCategories/Quartz/YYCGUtilities.h:83:66: note: insert '_Nonnull' if the array parameter should never be null&#10;    - WARN  | [iOS] xcodebuild:  YYCategories/YYCategories/Quartz/YYCGUtilities.h:83:84: warning: array parameter is missing a nullability type specifier (_Nonnull, _Nullable, or _Null_unspecified) [-Wnullability-completeness-on-arrays]&#10;    - NOTE  | [iOS] xcodebuild:  YYCategories/YYCategories/Quartz/YYCGUtilities.h:83:84: note: insert '_Nullable' if the array parameter may be null&#10;    - NOTE  | [iOS] xcodebuild:  YYCategories/YYCategories/Quartz/YYCGUtilities.h:83:84: note: insert '_Nonnull' if the array parameter should never be null&#10;    - WARN  | [iOS] xcodebuild:  YYCategories/YYCategories/Quartz/YYCGUtilities.h:112:9: warning: parameter 'rect' is already documented [-Wdocumentation]&#10;    - NOTE  | [iOS] xcodebuild:  YYCategories/YYCategories/Quartz/YYCGUtilities.h:110:34: note: previous documentation&#10;    - WARN  | [iOS] xcodebuild:  YYCategories/YYCategories/UIKit/UIDevice+YYAdd.h:109:9: warning: parameter 'type' not found in the function declaration [-Wdocumentation]&#10;    - NOTE  | [iOS] xcodebuild:  YYCategories/YYCategories/UIKit/UIDevice+YYAdd.h:109:9: note: did you mean 'types'?&#10;    - WARN  | [iOS] xcodebuild:  YYCategories/YYCategories/YYCategoriesMacro.h:204:9: warning: parameter '^block' not found in the function declaration [-Wdocumentation]&#10;    - NOTE  | [iOS] xcodebuild:  YYCategories/YYCategories/YYCategoriesMacro.h:204:9: note: did you mean 'block'?&#10;    - WARN  | [iOS] xcodebuild:  YYCategories/YYCategories/YYCategoriesMacro.h:205:9: warning: parameter '^complete' not found in the function declaration [-Wdocumentation]&#10;    - NOTE  | [iOS] xcodebuild:  YYCategories/YYCategories/YYCategoriesMacro.h:205:9: note: did you mean 'complete'?&#10;    - WARN  | [iOS] xcodebuild:  YYCategories/YYCategories/YYCategoriesMacro.h:295:62: warning: this block declaration is not a prototype [-Wstrict-prototypes]&#10;    - WARN  | [iOS] xcodebuild:  YYCategories/YYCategories/YYCategoriesMacro.h:306:61: warning: this block declaration is not a prototype [-Wstrict-prototypes]&#10;    - ERROR | [iOS] xcodebuild:  /Users/mac/Desktop/NormalTools/NormalTools/Classes/QRCode/QRCode.m:33:82: error: use of undeclared identifier 'adjustRatio'&#10;    - ERROR | [iOS] xcodebuild:  /Users/mac/Desktop/NormalTools/NormalTools/Classes/QRCode/QRCode.m:33:99: error: use of undeclared identifier 'adjustRatio'&#10;    - NOTE  | [iOS] xcodebuild:  warning: The iOS Simulator deployment target 'IPHONEOS_DEPLOYMENT_TARGET' is set to 8.0, but the range of supported deployment target versions is 9.0 to 14.4.99. (in target 'YYCategories' from project 'Pods')&#10;&#10;[!] NormalTools did not pass validation, due to 3 errors.&#10;You can use the `--no-clean` option to inspect any issue.&#10;" />
+      <testcase classname="fastlane.lanes" name="6: git_tag_exists" time="0.015586">
         
       </testcase>
     

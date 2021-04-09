@@ -38,7 +38,7 @@ lane :release_pod do |options|
   push_to_git_remote
   if git_tag_exists(tag: target_version)
       UI.message("Tag #{target_version} already exists, then, delete it! 💥")
-      remove_git_tag(tag: target_version)
+      remove_tag(tag: target_version)
   end
 
   add_git_tag(tag: target_version)
@@ -52,4 +52,6 @@ lane :release_pod do |options|
     UI.message("Release lib #{target_project} new version #{target_version} to CocoaPods/Specs Successfully! 🎉 ")
   end
 end
+
+
 
