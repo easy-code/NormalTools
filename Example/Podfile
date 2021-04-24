@@ -9,5 +9,8 @@ target 'NormalTools_Example' do
     inherit! :search_paths
     pod 'YYCategories', '~> 1.0.4'
     pod 'FBSnapshotTestCase'
+    pod 'AFNetworking'
+    pod 'Masonry'
+    pod 'SVProgressHUD'
   end
 end
