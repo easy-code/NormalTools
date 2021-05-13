@@ -1,9 +1,8 @@
 //
-//  SearchAnimationView.h
-//  MKSmartHome
+//  RipplesView.h
 //
-//  Created by MKTech01 on 2021/3/18.
-//  Copyright © 2021 MKTECH. All rights reserved.
+//  Created by ichengfeng on 2021/05/13.
+//  Copyright © 2021 ichengfeng. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -12,7 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 typedef void(^StartEventHandle)(BOOL selected);
 
-@interface RipplesAnimationView : UIView
+@interface RipplesView : UIView
 
 @property (copy, nonatomic)StartEventHandle startEventHandle;
 

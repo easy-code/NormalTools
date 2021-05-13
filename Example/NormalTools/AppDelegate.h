@@ -1,5 +1,5 @@
 //
-//  NTViewController.h
+//  NTAppDelegate.h
 //  NormalTools
 //
 //  Created by Fengzee on 05/27/2020.
@@ -8,6 +8,8 @@
 
 @import UIKit;
 
-@interface NTViewController : UIViewController
+@interface AppDelegate : UIResponder <UIApplicationDelegate>
+
+@property (strong, nonatomic) UIWindow *window;
 
 @end

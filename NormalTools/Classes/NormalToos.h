@@ -26,5 +26,7 @@
 ///获取IP
 #import "IPCapture.h"
 
+///涟漪效果
+#import "RipplesView.h"
 
 #endif /* NormalToos_h */

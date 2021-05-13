@@ -1,20 +1,21 @@
 //
-//  SearchAnimationView.m
-//  MKSmartHome
+//  RipplesView.m
 //
-//  Created by MKTech01 on 2021/3/18.
-//  Copyright © 2021 MKTECH. All rights reserved.
+//  Created by ichengfeng on 2021/05/13.
+//  Copyright © 2021 ichengfeng. All rights reserved.
 //
 
-#import "RipplesAnimationView.h"
+#import "RipplesView.h"
 
-@interface RipplesAnimationView ()
+@interface RipplesView ()
 
 @property (nonatomic, strong) CAShapeLayer *circleShapeLayer;
 
+@property(nonatomic, strong)UIButton *btn;
+
 @end
 
-@implementation RipplesAnimationView
+@implementation RipplesView
 
 - (instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
@@ -22,17 +23,17 @@
         self.layer.masksToBounds = NO;
         
         CGRect rect = self.frame;
-        UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-        btn.tag = 200;
-        btn.frame = CGRectMake(0, 0, rect.size.width, rect.size.height);
-        btn.layer.masksToBounds = YES;
-        btn.layer.cornerRadius = rect.size.width/2;
-        [btn setTitle:@"开始检测" forState:UIControlStateNormal];
-        [btn setTitle:@"搜寻中" forState:UIControlStateSelected];
-        [btn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        [btn setBackgroundColor:[UIColor systemBlueColor]];
-        [btn addTarget:self action:@selector(clickeEvent:) forControlEvents:UIControlEventTouchUpInside];
-        [self addSubview: btn];
+        self.btn = [UIButton buttonWithType:UIButtonTypeCustom];
+        self.btn.tag = 200;
+        self.btn.frame = CGRectMake(0, 0, rect.size.width, rect.size.height);
+        self.btn.layer.masksToBounds = YES;
+        self.btn.layer.cornerRadius = rect.size.width/2;
+        [self.btn setTitle:@"开始检测" forState:UIControlStateNormal];
+        [self.btn setTitle:@"搜寻中" forState:UIControlStateSelected];
+        [self.btn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        [self.btn setBackgroundColor:[UIColor systemBlueColor]];
+        [self.btn addTarget:self action:@selector(clickeEvent:) forControlEvents:UIControlEventTouchUpInside];
+        [self addSubview: self.btn];
         [self setUpLayers];
     }
     return self;
@@ -123,6 +124,7 @@
     groupAnimation.repeatCount = HUGE;
     
     [_circleShapeLayer addAnimation:groupAnimation forKey:nil];
+    [self bringSubviewToFront:self.btn];
 }
 
 - (void)stopAnimation{

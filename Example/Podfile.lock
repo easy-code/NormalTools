@@ -20,7 +20,7 @@ PODS:
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
   - Masonry (1.1.0)
-  - NormalTools (1.0.4):
+  - NormalTools (1.0.5):
     - AFNetworking
     - Masonry
     - SVProgressHUD
@@ -54,7 +54,7 @@ SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  NormalTools: b73472352d5e48b10c6012f90204558d9dfc3bee
+  NormalTools: 1e4f0bda9b330929400e090e045d5f37fcafbee7
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   YYCategories: 6bcd4314c6661a561410dce4a793379ebd306abd
 

@@ -19,6 +19,7 @@
 #import "UILabel+LineCounter.h"
 #import "NormalToos.h"
 #import "QRCode.h"
+#import "RipplesView.h"
 #import "SavePhoto.h"
 #import "UIView+WhenTappedBlocks.h"
 #import "Toast+UIView.h"

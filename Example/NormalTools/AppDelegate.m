@@ -6,9 +6,9 @@
 //  Copyright (c) 2020 Fengzee. All rights reserved.
 //
 
-#import "NTAppDelegate.h"
+#import "AppDelegate.h"
 
-@implementation NTAppDelegate
+@implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
