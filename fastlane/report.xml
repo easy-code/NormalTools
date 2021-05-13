@@ -5,62 +5,74 @@
     
     
       
-      <testcase classname="fastlane.lanes" name="00: git_pull" time="2.195569">
+      <testcase classname="fastlane.lanes" name="00: version_get_podspec" time="0.001701">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="01: ensure_git_branch" time="0.017797">
+      <testcase classname="fastlane.lanes" name="01: version_bump_podspec" time="0.001807">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="02: version_bump_podspec" time="0.001448">
+      <testcase classname="fastlane.lanes" name="02: version_get_podspec" time="0.001281">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="03: git_add" time="0.048735">
+      <testcase classname="fastlane.lanes" name="03: git_pull" time="3.050754">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="04: git_commit" time="0.065375">
+      <testcase classname="fastlane.lanes" name="04: ensure_git_branch" time="0.017205">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="05: push_to_git_remote" time="3.044668">
+      <testcase classname="fastlane.lanes" name="05: version_bump_podspec" time="0.001634">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="06: git_tag_exists" time="0.014972">
+      <testcase classname="fastlane.lanes" name="06: git_add" time="0.029606">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="07: remove_tag" time="3.204363">
+      <testcase classname="fastlane.lanes" name="07: git_commit" time="0.039885">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="08: add_git_tag" time="0.022046">
+      <testcase classname="fastlane.lanes" name="08: push_to_git_remote" time="3.700126">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="09: push_git_tags" time="2.925258">
+      <testcase classname="fastlane.lanes" name="09: git_tag_exists" time="0.018245">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="10: pod_lib_lint" time="91.448117">
+      <testcase classname="fastlane.lanes" name="10: add_git_tag" time="0.028852">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="11: pod_push" time="97.371395">
+      <testcase classname="fastlane.lanes" name="11: push_git_tags" time="3.491888">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="12: pod_lib_lint" time="50.992903">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="13: pod_push" time="2.731797">
+        
+          <failure message="/Users/mac/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/fastlane-2.182.0/fastlane/lib/fastlane/actions/actions_helper.rb:67:in `execute_action'&#10;/Users/mac/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/fastlane-2.182.0/fastlane/lib/fastlane/runner.rb:255:in `block in execute_action'&#10;/Users/mac/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/fastlane-2.182.0/fastlane/lib/fastlane/runner.rb:229:in `chdir'&#10;/Users/mac/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/fastlane-2.182.0/fastlane/lib/fastlane/runner.rb:229:in `execute_action'&#10;/Users/mac/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/fastlane-2.182.0/fastlane/lib/fastlane/runner.rb:157:in `trigger_action_by_name'&#10;/Users/mac/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/fastlane-2.182.0/fastlane/lib/fastlane/fast_file.rb:159:in `method_missing'&#10;Fastfile:53:in `block in parsing_binding'&#10;/Users/mac/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/fastlane-2.182.0/fastlane/lib/fastlane/lane.rb:33:in `call'&#10;/Users/mac/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/fastlane-2.182.0/fastlane/lib/fastlane/runner.rb:49:in `block in execute'&#10;/Users/mac/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/fastlane-2.182.0/fastlane/lib/fastlane/runner.rb:45:in `chdir'&#10;/Users/mac/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/fastlane-2.182.0/fastlane/lib/fastlane/runner.rb:45:in `execute'&#10;/Users/mac/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/fastlane-2.182.0/fastlane/lib/fastlane/lane_manager.rb:47:in `cruise_lane'&#10;/Users/mac/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/fastlane-2.182.0/fastlane/lib/fastlane/command_line_handler.rb:36:in `handle'&#10;/Users/mac/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/fastlane-2.182.0/fastlane/lib/fastlane/commands_generator.rb:109:in `block (2 levels) in run'&#10;/Users/mac/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/commander-4.6.0/lib/commander/command.rb:187:in `call'&#10;/Users/mac/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/commander-4.6.0/lib/commander/command.rb:157:in `run'&#10;/Users/mac/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/commander-4.6.0/lib/commander/runner.rb:444:in `run_active_command'&#10;/Users/mac/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/fastlane-2.182.0/fastlane_core/lib/fastlane_core/ui/fastlane_runner.rb:76:in `run!'&#10;/Users/mac/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/commander-4.6.0/lib/commander/delegates.rb:18:in `run!'&#10;/Users/mac/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/fastlane-2.182.0/fastlane/lib/fastlane/commands_generator.rb:353:in `run'&#10;/Users/mac/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/fastlane-2.182.0/fastlane/lib/fastlane/commands_generator.rb:42:in `start'&#10;/Users/mac/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/fastlane-2.182.0/fastlane/lib/fastlane/cli_tools_distributor.rb:122:in `take_off'&#10;/Users/mac/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/fastlane-2.182.0/bin/fastlane:23:in `&lt;top (required)&gt;'&#10;/Users/mac/.rbenv/versions/2.7.1/bin/fastlane:23:in `load'&#10;/Users/mac/.rbenv/versions/2.7.1/bin/fastlane:23:in `&lt;main&gt;'&#10;&#10;Exit status of command 'pod repo push trunk 'NormalTools.podspec' --allow-warnings' was 1 instead of 0.&#10;[!] Cannot push to a CDN source, as it is read-only.&#10;" />
         
       </testcase>
     

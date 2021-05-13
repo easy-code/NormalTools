@@ -1,1 +1,1 @@
-fastlane release_pod project:"NormalTools" repo:"trunk"
+fastlane release_pod project:"NormalTools"
