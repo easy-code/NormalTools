@@ -1,17 +1,22 @@
-#用法 fastlane release_pod project:"NormalTools" version:"1.0.2"
+#用法 fastlane release_pod project:"iTools" version:"0.0.1"
 desc 'Release New Pod Version'
 lane :release_pod do |options|
   target_repo    = options[:repo]
   target_project = options[:project]
-  target_version = options[:version]
   target_desc    = options[:desc]
   spec_path      = "#{target_project}.podspec"
+  target_version = version_get_podspec(path: "#{spec_path}")
 
   if target_project.nil? || target_project.empty? || target_version.nil? || target_version.empty?
     UI.message("❌ Project name and version number are required parameters")
     exit
   end
 
+  #自动管理版本号，发布版本号加1
+  version_bump_podspec
+
+  target_version = version_get_podspec(path: "#{spec_path}")
+  
   UI.message("👉 Start release lib #{target_project} new version #{target_version}")
 
   git_pull
@@ -52,6 +57,4 @@ lane :release_pod do |options|
     UI.message("Release lib #{target_project} new version #{target_version} to CocoaPods/Specs Successfully! 🎉 ")
   end
 end
-
-
 
