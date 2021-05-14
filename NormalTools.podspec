@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'NormalTools'
-  s.version          = '1.0.7'
+  s.version          = '1.0.9'
   s.summary          = '常用工具合集'
 
 # This description is used to generate tags and improve search results.
